@@ -14,15 +14,16 @@ Claim ("conquer") real-life study spots by logging focused study time there
 Community-driven spot rankings — the more popular a spot, the harder it is to conquer
 Live interactive campus map that updates in real time as users study and rankings shift
 
-## 🚀 Features
+## 🚀 Tech Stack
 
-- **Frontend**: React 18 with Vite for fast development
-- **Backend**: Express.js with RESTful API
-- **Authentication**: Supabase integration with email/password and OAuth
-- **Styling**: Tailwind CSS for modern UI
-- **State Management**: React Context for authentication
-- **Routing**: React Router for client-side navigation
-- **Development**: Hot reload for both client and server
+-**Frontend**: React 19 + Vite, Tailwind CSS, React Router
+-**Backend**: Node.js + Express
+-**Database/Auth**: Supabase (auth, real-time sync)
+-**Map**: Leaflet + react-leaflet
+-**AI**: Google Gemini API — server-side calls power three AI features (location descriptions, recommendations, insights)
+-**Google Maps API**: used server-side for geocoding study-spot locations
+
+## My Contribution
 
 ## 📁 Project Structure
 
