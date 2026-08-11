@@ -1,6 +1,18 @@
-# Modern Web App Template
+## ConQuest
 
-A full-stack web application template with React frontend, Express.js backend, and Supabase authentication.
+Turn studying into a real-life adventure — conquer campus study spots, earn points, and team up with friends to dominate the map.
+
+[insert demo gif here]
+
+## Motivation
+
+Studying alone is isolating and easy to put off. ConQuest brings back the collaborative, imaginative energy of childhood roleplay games and channels it into better study habits — turning campus into an interactive map where progress is social, visible, and a little competitive.
+
+## Features
+Claim ("conquer") real-life study spots by logging focused study time there
+2x point multiplier for studying with friends, rewarding collaboration over isolation
+Community-driven spot rankings — the more popular a spot, the harder it is to conquer
+Live interactive campus map that updates in real time as users study and rankings shift
 
 ## 🚀 Features
 
