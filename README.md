@@ -2,7 +2,9 @@
 
 Turn studying into a real-life adventure — conquer campus study spots, earn points, and team up with friends to dominate the map.
 
-![insert demo gif here]
+# Demo Link
+[![Watch the demo](https://img.youtube.com/vi/R_yqXzaxmXo/maxresdefault.jpg)](https://www.youtube.com/watch?v=R_yqXzaxmXo)
+
 
 ## Problem / Motivation
 Studying alone is isolating and easy to put off. ConQuest brings back the collaborative, imaginative energy of childhood roleplay games and channels it into better study habits — turning campus into an interactive map where progress is social, visible, and a little competitive.
