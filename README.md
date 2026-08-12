@@ -2,7 +2,8 @@
 
 Turn studying into a real-life adventure — conquer campus study spots, earn points, and team up with friends to dominate the map.
 
-# Demo Link
+# Demo
+Click below to watch the demo!
 [![Watch the demo](https://img.youtube.com/vi/R_yqXzaxmXo/maxresdefault.jpg)](https://www.youtube.com/watch?v=R_yqXzaxmXo)
 
 
