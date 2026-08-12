@@ -897,7 +897,7 @@ app.post('/api/friends/nearby', requireAuth, async (req, res) => {
         user_uuid: req.user.id,
         user_lat: latitude,
         user_lng: longitude,
-        distance_meters: distance
+        max_distance_meters: distance
       });
     
     if (error) throw error;

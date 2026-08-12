@@ -149,7 +149,7 @@ CREATE OR REPLACE FUNCTION check_nearby_friends(
   user_uuid UUID,
   user_lat DECIMAL(10, 8),
   user_lng DECIMAL(11, 8),
-  distance_meters INTEGER DEFAULT 1000
+  max_distance_meters INTEGER DEFAULT 1000
 )
 RETURNS TABLE (
   friend_id UUID,
@@ -175,17 +175,14 @@ BEGIN
   WHERE f.user_id = user_uuid 
     AND f.status = 'accepted'
     AND ls.can_see_location = true
-    AND lt.created_at > NOW() - INTERVAL '1 hour' -- Only recent locations
+    AND lt.created_at > NOW() - INTERVAL '1 hour'
     AND (6371000 * acos(
       cos(radians(user_lat)) * 
       cos(radians(lt.latitude)) * 
       cos(radians(lt.longitude) - radians(user_lng)) + 
       sin(radians(user_lat)) * 
       sin(radians(lt.latitude))
-    )) <= distance_meters
+    )) <= max_distance_meters
   ORDER BY distance_meters;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
-
-
-
