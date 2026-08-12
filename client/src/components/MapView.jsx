@@ -7,11 +7,14 @@ import LocationProgressBar from './LocationProgressBar';
 import LocationLevelProgress from './LocationLevelProgress';
 import CelebrationModal from './CelebrationModal';
 
+// TEMPORARY — hardcoded for demo recording, remove before real use
+// const DEMO_LOCATION = { latitude: 47.65650000, longitude: -122.31040000 };
+
 const nancyIcon = L.divIcon({
   html: `
     <div style="display:flex;flex-direction:column;align-items:center;">
       <img src="/Nancy.png" style="width:60px;height:60px;border-radius:50%;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);" />
-      <span style="font-size:12px;font-weight:600;color:#2c3e50;background:rgba(146, 168, 219, 0.8);border-radius:8px;padding:2px 6px;margin-top:2px;">Alicia</span>
+      <span style="font-size:12px;font-weight:600;color:#2c3e50;background:rgba(146, 168, 219, 0.8);border-radius:8px;padding:2px 6px;margin-top:2px;">Nancy</span>
     </div>
   `,
   className: '',
@@ -24,7 +27,7 @@ const aliciaIcon = L.divIcon({
   html: `
     <div style="display:flex;flex-direction:column;align-items:center;">
       <img src="/Alicia.png" style="width:60px;height:60px;border-radius:50%;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);" />
-      <span style="font-size:12px;font-weight:600;color:#2c3e50;background:rgba(233, 160, 160, 0.8);border-radius:8px;padding:2px 6px;margin-top:2px;">Nancy</span>
+      <span style="font-size:12px;font-weight:600;color:#2c3e50;background:rgba(233, 160, 160, 0.8);border-radius:8px;padding:2px 6px;margin-top:2px;">Alicia</span>
     </div>
   `,
   className: '',
@@ -371,6 +374,9 @@ export default function MapView({
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const location = {
+          // TEMPORARY — hardcoded for demo recording, remove before real use
+          // latitude: DEMO_LOCATION.latitude,
+          // longitude: DEMO_LOCATION.longitude,
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
           accuracy: position.coords.accuracy,
@@ -573,6 +579,9 @@ export default function MapView({
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const location = {
+            // TEMPORARY — hardcoded for demo recording, remove before real use
+            // latitude: DEMO_LOCATION.latitude,
+            // longitude: DEMO_LOCATION.longitude,
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
             accuracy: position.coords.accuracy,
@@ -707,12 +716,12 @@ export default function MapView({
             attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> | Map tiles by <a href="https://stamen.com/">Stamen Design</a>, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
           />
 
-          <Marker position={[47.656, -122.3020]} icon={nancyIcon}  zIndexOffset={1000}>
+          <Marker position={[47.656, -122.303]} icon={nancyIcon}  zIndexOffset={1000}>
                 <Popup><strong>Nancy</strong><br />📍 HUB, UW Seattle</Popup>
           </Marker>
 
           <Marker position={[47.6594, -122.3051]} icon={aliciaIcon}  zIndexOffset={1000}>
-            <Popup><strong>Alicia</strong><br />📍 HUB, UW Seattle</Popup>
+            <Popup><strong>Alicia</strong><br />📍 Spratlen LRC</Popup>
           </Marker>
           
           {/* User's current location marker */}

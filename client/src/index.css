@@ -87,12 +87,7 @@ button:disabled {
   transform: none;
 }
 
-Custom cursor for everything
-html, body,
-.leaflet-container,
-.leaflet-grab,
-.leaflet-interactive,
-.leaflet-marker-icon,
-.leaflet-marker-shadow {
-  cursor: url('/cursor.png') 8 13, crosshair !important;
-}
+/*Custom cursor for everything 
+html, body {
+  cursor: url('/cursor.png') 5 5, crosshair !important;
+} */
