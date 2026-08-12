@@ -52,7 +52,14 @@ npm run dev
 This starts the client (http://localhost:5173) and server (http://localhost:3001) together.
 
 ## My Role
+I designed and built several of the app's core frontend features:
+- The initial interactive map component (`MapView.jsx`) — the central "conquer study spots" experience
+- The Friends system UI (`FriendsList.jsx`), enabling friend requests and location sharing
+- The Leaderboard and Profile pages, including the profile photo feature
+- The API service layer methods connecting the frontend to the friends/location backend endpoints
+- The overall visual design pass — Tailwind styling and layout across the map, friends, and dashboard views
 
+Teammates continued building on some of these components afterward. The current implementation reflects both my original work and later contributions from the team.
 
 ## Challenges & What We Learned
 - Working with mapping and geolocation libraries inside a React app
