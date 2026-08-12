@@ -66,4 +66,5 @@ This starts the client (http://localhost:5173) and server (http://localhost:3001
 - School-wide leaderboards and longer-term group challenges
 - Expanded map coverage for more study locations
 
-## License
+## Team
+Created in collaboration with Sophia Wei, Nathan Guan, and Alicia Yu at DubHacks 2025.
